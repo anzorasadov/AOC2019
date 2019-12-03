@@ -6,7 +6,7 @@ fn main () {
   let reader = BufReader::new(file);
   let mut fuel_requirements = 0;
 
-  for (_, line) in reader.lines().enumerate() {
+  for line in reader.lines() {
     let module_mass = line.unwrap().parse::<i32>().unwrap();
 
     let module_req = get_fuel_req(module_mass);
