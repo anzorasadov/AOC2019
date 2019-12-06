@@ -7,8 +7,9 @@ fn main() {
 
 	for num in min..max {
 
-		let adjacent_exists = find_adjacent(num.clone());
 		let is_asc = get_is_asc(num.clone());
+		if !is_asc { continue } 
+		let adjacent_exists = find_adjacent(num.clone());
 		let two_adjacent_exists = find_two_adjacent(num.clone());
 		
 		if adjacent_exists && is_asc {
