@@ -1,3 +1,5 @@
-import dayone from './01/day_one'
+import dayOne from './01/day_one'
+import dayTwo from './02/day_two'
 
-dayone()
+// dayOne()
+dayTwo()

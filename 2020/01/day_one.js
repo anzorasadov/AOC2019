@@ -1,8 +1,7 @@
-import input from './input'
 import inputstring from './input'
 
 
-export default function day1() {
+export default function dayOne() {
   const nums = inputstring.split('\n').map(n => parseInt(n))
   const one = partOne(nums)
   const two = partTwo(nums)
